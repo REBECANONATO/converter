@@ -13,8 +13,7 @@ class Converter {
             })
             .then(json=>{
                 resolve(
-                    (parseFloat(moedaAVal) * json[de_para]).toFixed(2)
-                    );
+                    (parseFloat(moedaAVal) * json[de_para]).toFixed(2));
             })
             .catch(err => {
                 reject(err);
